@@ -1,6 +1,6 @@
 # Stability Test Task API - Laporan Perbaikan Bug
 
-Dokumen ini memuat daftar bug yang ditemukan melalui pengujian menggunakan Postman, beserta detail perbaikannya. Fokus dari perbaikan ini adalah memastikan API berfungsi sesuai dengan standar `RESTful behavior`, me-return HTTP status yang tepat, serta menjaga integritas data tanpa mengubah arsitektur dasar backend. Selain membenahi anomali, dokumen ini juga mencakup implementasi penambahan fitur Endpoint Update (`PUT`) untuk menyempurnakan fungsionalitas CRUD secara utuh.
+Dokumen ini memuat daftar bug yang ditemukan melalui pengujian menggunakan Postman, beserta detail perbaikannya. Fokus dari perbaikan ini adalah memastikan API berfungsi sesuai dengan standar `RESTful behavior`, me-return HTTP status yang tepat, serta menjaga integritas data tanpa mengubah arsitektur dasar backend. Selain membenahi bug, dokumen ini juga mencakup sebuah improvement, yaitu implementasi penambahan fitur Endpoint Update (`PUT`) untuk melengkapi fungsionalitas CRUD secara utuh.
 
 ---
 
@@ -134,7 +134,7 @@ return c.JSON(fiber.Map{
 
 ---
 
-## 4. Feature Addition: Update Endpoint
+## 4. One Improvement: *NEW:* Update Endpoint
 
 ### Penambahan Endpoint `PUT /tasks/:id`
 *   **Deskripsi Penggunaan**: Endpoint standar yang didedikasikan untuk meng-update keseluruhan eksistensi data *task* (Fungsi 'U' di dalam operasi CRUD).
