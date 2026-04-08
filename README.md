@@ -199,7 +199,7 @@ func UpdateTask(c *fiber.Ctx) error {
 func UpdateTask(id int, updatedTask models.Task) *models.Task {
     for i, t := range Tasks {
         if t.ID == id {
-            updatedTask.ID = id // enforce immutability di struktur ID original
+            updatedTask.ID = id
             Tasks[i] = updatedTask
             return &Tasks[i]
         }
